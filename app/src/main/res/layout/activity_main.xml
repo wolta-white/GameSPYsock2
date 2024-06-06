@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2EBB5F"
+            android:text="Какой жанр игр вам нравится?" />
+        <RadioGroup
+            android:id="@+id/genreGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Экшн"/>
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/adventure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Приключения"/>
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/puzzle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Головоломки"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2EBB5F"
+            android:text="Среднее время прохождения на игру?" />
+        <RadioGroup
+            android:id="@+id/timeGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/downTo30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="До 30 часов"/>
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/upTo30" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Свыше 30 часов"/>
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2EBB5F"
+            android:text="Включать ли игры с жестоким контентом (от 18+)?" />
+        <RadioGroup
+            android:id="@+id/ratingGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/ratingAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Да"/>
+            <RadioButton android:textColor="#2EBB5F" android:id="@+id/ratingOnlyUnder18Plus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Нет"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отправить"
+            android:backgroundTint="#485BC0"
+            app:cornerRadius="5dp" />
+    </LinearLayout>
+</ScrollView>
+
